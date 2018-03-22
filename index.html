@@ -1,0 +1,103 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Michela Cappelli Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Udacity Nanodegree Course Portfolio">
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:light,regular" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome" />
+</head>
+<body>
+  <header>
+    <picture >
+      <img class="logo header__logo"  src="img/logo.png" alt="Michela Cappelli old logo">
+    </picture>
+    <div class="zocial">
+      <a href="http://www.twitter.com/michelacappelli" class="ico fontawesome-twitter-sign"></a>
+      <a href="http://www.facebook.com/michelacappelli" class="ico fontawesome-facebook-sign"></a>
+      <a href="http://www.pinterest.com/michelacappe" class="ico fontawesome-pinterest-sign"></a>
+      <a href="http://www.linkedin.com/in/michelacappelli" class="ico fontawesome-linkedin-sign"></a>
+      <a href="mailto:mik@michelacappelli.com?Subject=Bonjour" class="ico fontawesome-envelope-alt"></a>
+    </div>
+  </header>
+  <a id="hamburger" class="toggle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+    </svg>
+  </a>
+  <nav id="panel" class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="container">
+      <section class="intro">
+        <h1>Michela Cappelli</h1>
+        <h2>Graphic and Web Designer</h2>
+      </section>
+      <section class="about">
+        <h3>Who I am</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie ornare egestas. Etiam eget sapien purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus iaculis nisi eget ligula faucibus, feugiat ultricies leo mollis. Maecenas tempus in purus quis dignissim. Pellentesque non leo quam. Proin neque ex, luctus non ante eu, suscipit mattis nisi. Pellentesque tincidunt ante at luctus aliquam.
+          Donec libero turpis, commodo vitae efficitur sit amet, aliquam non magna. Praesent condimentum blandit sollicitudin. Etiam luctus sem malesuada, viverra leo eu, sodales tortor. Quisque ultricies mauris facilisis quam lacinia, vitae tempus sapien congue. Pellentesque viverra libero sit amet dignissim euismod. Pellentesque porta at massa eu convallis. Aenean scelerisque quis arcu ac tristique.
+        </p>
+        </section>
+        <section class="portfolio">
+          <div class="folio_main"><h3>Portfolio</h3>
+            <div class="box">
+              <figure class="folio_item">
+                <img src="img/sea_380.jpg" alt="Sea early morning">
+                <figcaption>Sea Landscape 3d Illustration</figcaption>
+              </figure>
+            </div>
+            <div class="box">
+              <figure class="folio_item">
+                <img src="img/book_380.jpg" alt="Book Cover Design">
+                <figcaption>Book Cover Design</figcaption>
+              </figure>
+            </div>
+            <div class="box">
+              <figure class="folio_item">
+                <img src="img/lighthouse_380.jpg" alt="Lighthouse 3D Illustration">
+                <figcaption>Lighthouse at dusk 3d Illustration</figcaption>
+              </figure>
+            </div>
+            <div class="box">
+              <figure class="folio_item">
+                <img src="img/boat_380.jpg" alt="Boat at sea 3D Illustration">
+                <figcaption> Stormy wheather at sea 3d Illustration</figcaption>
+              </figure>
+            </div></div>
+          </section>
+          <footer  class="foot">
+            <div class="foo_container">
+              <p> Made with ♥ from Mik thank to <a href="www.udacity.com">Udacity</a></p>
+            </div>
+          </footer>
+        </div>
+      </main>
+      <script>
+      /*
+      * Open the drawer when the menu ison is clicked.
+      */
+      var menu = document.querySelector('#hamburger');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('#panel');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+      </script>
+    </body>
+    </html>

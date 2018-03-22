@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height:100%;
+}
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	color: #2A364C;
+	background-color: #FFF2EB;
+}
+header, nav, footer, section, article, div, figure {
+	box-sizing: border-box;
+
+}
+header {
+	padding: 0.5em;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	display: flex;
+}
+
+
+/* Navigation Menu styling */
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-list {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-item {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	line-height: 24px;
+	padding: 24px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #394A68;
+	padding: 1.5em;
+	font-weight: 400;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+	color: #651958;
+}
+/* .content {
+display: flex;
+flex-wrap: wrap;
+} */
+
+@media screen and (max-width: 600px)  {
+	.logo {
+		height: 75px;
+		margin-right: 0.5em;
+	}
+	nav {
+		width: 300px;
+		height: auto;
+		background-color: #fff;
+		width: 270px;
+		position: absolute;
+		/* This trasform moves the drawer off canvas. */
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		/* Optionally, we animate the drawer. */
+		transition: transform 0.3s ease;
+	}
+	nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	.nav-list {
+		width: 300px;
+	}
+	.nav-item {
+		display: list-item;
+		border-bottom: 1px solid #E0E0E0;
+
+		margin: 0;
+		text-align: left;
+	}
+	.toggle {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		padding: 1em;
+	}
+
+	.toggle svg {
+		width: 30px;
+		fill: #ccc;
+		cursor: pointer;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 601px){
+	a.nav-list {
+	}
+	.toggle {
+		display: none;
+	}
+}
+
+/* Central Title H1 styling */
+
+.intro {
+	height: 50vh;
+	width: 100%;
+	background-image: url(../img/4.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+
+.intro h1,h2,h3 {
+	font-family: 'Prata', serif;
+	text-align: center;
+	vertical-align: middle;
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+	padding-top:  6vh;
+}
+h2 {
+	font-family: 'Oswald', serif;
+	font-size: 2em;
+	font-weight: 200;
+	color: white;
+}
+h3 {
+	padding: 0.8em;
+}
+
+/* Bio section styling */
+.about {
+	width: 70%;
+	margin: auto;
+	padding: 4em 0;
+}
+/* Portfolio section styling */
+.portfolio {
+	padding: 0 0 0.3em;
+}
+.folio_main {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.box {
+	padding: 0 6px;
+	display: inline-flex;
+	width: 24.7%;
+}
+
+@media only screen and (max-width: 850px) {
+	.box {
+		width: 49.7%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 555px) {
+	.box {
+		width: 100%;
+		display: block;
+	}
+}
+
+.folio_item {
+	border: 1px solid #405374;
+}
+
+.folio_item img {
+	width: 100%;
+}
+figcaption {
+	font-size: 0.9em;
+	padding: 3px;
+	text-align: center;
+}
+/* Footer section styling */
+footer  {
+	box-sizing: inherit;
+	height: 68px;
+	padding-top:  30px  !important;
+	text-align: center;
+}
+.foo_container {
+	/* margin: 6em 0 1em; */
+	padding: 1em;
+}
+
+/* fontawesome Top Icons Styling*/
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+	padding-right: 0.7em;
+}
+a.ico {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #394A68;
+}
+a.ico:hover {
+	color: #651958;
+}
+.zocial {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
